@@ -89,7 +89,7 @@ with st.expander("-> RIBS SUPPRESION ", expanded=False):
       - Gabor filter:
       - A linear filtre used for texture anaylsis ie, they analyse if the image is composed of any frequency components in a specific direction.
       - Choosing the Gabor filter Parameters proves to be a difficult task as they play a very important role in extracting the ribs.
-      - This gabor filter highlight the features or texture of images along with which it is oriented and suppressed rest all the features of image.
+      - Now this gabor filter highlights the features or texture of images along the direction in which the filter is oriented while suppressing the remaining features of image.
           """
       )
       st.write("Original Image")
