@@ -82,14 +82,14 @@ with st.expander("-> RIBS SUPPRESION ", expanded=False):
       st.write(
           """    
   - RIBS SUPRESSION:
-      - Clahe method for enhanchment of image:
-      - used to improve contrast of the image enhanched so that histogram output matches the histogram of the entire image .
-      - to maintain good amount of accuracy ,the lung feild carefully extracted from the image manually by earsing the other parts such as spinal caord.
-      - Since , instesity of pixels is discretely distributed on the image called the entire image.
-      - ribcage shadow suppresion ,we have to first obtain the ribcage for the which is the gabour filtreis introduced.
-      - Gabor filtre:
-      - A linaer filtre used to texture anaylsis ,they play important rule for extracting ribs.
-      - They highlight the features or texture of images along with which it is oriented and suppressed rest all the features of image.
+      - CLAHE(Contrast Limited Adaptive Histogram Equilization) method for Image enhancement
+      - A major difficulty in the analysis of chest radiographs is due to the invisibility of abnormalities caused due to the superimposition of the ribcage shadow on the lung tissue.
+      - Supressing the rigcage shadow with no much medical information loss would therefore be helpful to identify the abnormalities easily.
+      - This can be done with the help of Gabor Filter
+      - Gabor filter:
+      - A linear filtre used for texture anaylsis ie, they analyse if the image is composed of any frequency components in a specific direction.
+      - Choosing the Gabor filter Parameters proves to be a difficult task as they play a very important role in extracting the ribs.
+      - This gabor filter highlight the features or texture of images along with which it is oriented and suppressed rest all the features of image.
           """
       )
       st.write("Original Image")
@@ -108,7 +108,7 @@ with st.expander("-> LUNG Segmentation ", expanded=False):
       - Entire data was divided into three division  which include :  train,test and validation .
       - Binary semantic segmentation was employed with the help of universal architecture (U-Net Model).
       - Model was intsialised with zero centric random weights.
-      - Model was trained over total of 25 epoches and we achived a dice score  of 80% on the training data and 76% on the test data.
+      - Model was trained over total of 25 epoches and we achived a dice score of 92% on the training data and 87% on the test data.
       - In the future we aim to increase the dice score of the model through hyper parameter tunning.""")
       st.write("Original Image------------------------------------Ground Truth------------------------------Predicted Mask")
       img = Image.open("CHNCXR_0003_0.png")
