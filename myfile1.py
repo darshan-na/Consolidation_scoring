@@ -73,7 +73,7 @@ with st.container():
     left_column, right_column = st.columns(2)
     with left_column:
         #st.header("What we do")
-        st_lottie(lottie_new, height=200, key="new")
+        st_lottie(lottie_new, height=100, key="new")
         #st.write("##")
     with right_column:
         st_lottie(lottie_coding, height=200, key="coding")
@@ -110,7 +110,7 @@ with st.expander("-> LUNG Segmentation ", expanded=False):
       - Model was intsialised with zero centric random weights.
       - Model was trained over total of 25 epoches and we achived a dice score  of 80% on the training data and 76% on the test data.
       - In the future we aim to increase the dice score of the model through hyper parameter tunning.""")
-      st.write("Original Image                     Ground Truth                Predicted Mask")
+      st.write("Original Image                     \tGround Truth                Predicted Mask")
       img = Image.open("CHNCXR_0003_0.png")
       st.image(img)
       st.write("Original Image")
