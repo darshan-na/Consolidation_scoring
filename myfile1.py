@@ -113,7 +113,7 @@ with st.expander("-> LUNG Segmentation ", expanded=False):
       st.write("Original Image","            ","pred")
       img = Image.open("CHNCXR_0003_0.png")
       st.image(img)
-      st.write("Original Image-----------------------------Ground Truth-----------------------------Predicted Mask")
+      st.write("Original Image------------------------------------Ground Truth------------------------------Predicted Mask")
       img = Image.open("CHNCXR_0468_1.png")
       st.image(img)
       st.write("Original Image")
