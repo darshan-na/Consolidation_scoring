@@ -110,7 +110,7 @@ with st.expander("-> LUNG Segmentation ", expanded=False):
       - Model was intsialised with zero centric random weights.
       - Model was trained over total of 25 epoches and we achived a dice score  of 80% on the training data and 76% on the test data.
       - In the future we aim to increase the dice score of the model through hyper parameter tunning.""")
-      st.write("Original Image")
+      st.write("Original Image                     Ground Truth                Predicted Mask")
       img = Image.open("CHNCXR_0003_0.png")
       st.image(img)
       st.write("Original Image")
